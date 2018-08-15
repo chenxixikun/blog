@@ -15,26 +15,6 @@
 
   <!--Description-->
   
-      <meta name="description" content="Our Love Story
-	
-	
-		@font-face {
-			font-family: digit;
-			src: url(&#39;digital-7_mono.ttf&#39;) format(&#34;truetype&#34;);
-		}
-	
-	
-	
-	
-    
-
-
-
-	
-		
-			
-				2016.0">
-  
 
   <!--Author-->
   
@@ -46,7 +26,7 @@
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,800" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/blog/css/styles.css">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -64,7 +44,7 @@
   	<div class="container-fluid navbar-container m-sm-5">
       <!-- Header -->
       <nav class="navbar navbar-toggleable-sm navbar-light px-1 py-3 my-3 mb-sm-5">
-  <a class="navbar-brand ml-2" href="/">嘻嘻</a>
+  <a class="navbar-brand ml-2" href="/blog/">嘻嘻</a>
   <button class="navbar-toggler navbar-toggler-right py-2" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -72,19 +52,19 @@
     <ul class="navbar-nav ml-auto my-auto">
       
         <li class="nav-item">
-          <a class="nav-link" href="/life/index.html">生活</a>
+          <a class="nav-link" href="/blog/life/index.html">生活</a>
         </li>
       
         <li class="nav-item">
-          <a class="nav-link" href="/fun/index.html">远方</a>
+          <a class="nav-link" href="/blog/fun/index.html">远方</a>
         </li>
       
         <li class="nav-item">
-          <a class="nav-link" href="/ourstory/index.html">我们</a>
+          <a class="nav-link" href="/blog/ourstory/index.html">我们</a>
         </li>
       
         <li class="nav-item">
-          <a class="nav-link" href="/comment/index.html">留言</a>
+          <a class="nav-link" href="/blog/comment/index.html">留言</a>
         </li>
       
     </ul>
@@ -95,98 +75,89 @@
 
   		<div class="row">
   			
-<div class="col-12 pt-lg-3 mb-4 px-4 portfolio-content">
-  <!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<title>Our Love Story</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<style type="text/css">
-		@font-face {
-			font-family: digit;
-			src: url('digital-7_mono.ttf') format("truetype");
-		}
-	</style>
-	<link href="css/default.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
-</head>
-
-<body>
-	<div id="mainDiv">
-		<div id="content">
-			<div id="code">
-				<span class="comments">2016.08.20</span><br>
-				<span class="comments">箭扣</span><br>
-				<span class="comments">在北京最险峻美丽的长城上, 我们度过了相识的第一天</span><br>
-				<span class="comments">2016.09.10</span><br>				
-				<span class="comments">景山公园, 小西天的电影资料馆</span><br>
-				<span class="comments">我们第一次约会的地点</span><br>
-				<span class="comments">2016.12.10</span><br>
-				<span class="comments">西二旗智学苑</span><br>
-				<span class="comments">我们在一起的第一天</span><br>
-				<span class="comments">然后故事慢慢展开</span><br>
-				<span class="comments">彼岸, 南山滑雪场, 保利剧院, 库布齐沙漠, 中轴线</span><br>
-				<span class="comments">我们一起看电影, 逛书店, 徒步, 爬山, 买菜做饭...</span><br>
-				<span class="comments">幸运遇见彼此</span><br>
-				<span class="comments">前路漫漫</span><br>
-				<span class="comments">我们一起去探索发现</span><br>
-			</div>
-			<div id="loveHeart">
-				<canvas id="garden"></canvas>
-				<div id="words">
-					<div id="messages">
-						这是我们认识的第<div id="elapseClock"></div>
-					</div>
-					<div id="loveu">
-						得一人心, 白首不离.<br>
-						<div class="signature"> Chenxi & Xikun</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="copyright">
-			Inspired by <a href="https://github.com/hackerzhou/Love" target="_blank" rel="noopener">OurLoveStory</a> project.<br>
-		</div>
-	</div>
-	<script type="text/javascript">
-		var offsetX = $("#loveHeart").width() / 2;
-		var offsetY = $("#loveHeart").height() / 2 - 55;
-		var together = new Date();
-		together.setFullYear(2016, 7, 20);
-		together.setHours(12);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
-		
-		if (!document.createElement('canvas').getContext) {
-			var msg = document.createElement("div");
-			msg.id = "errorMsg";
-			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-			document.body.appendChild(msg);
-			$("#code").css("display", "none")
-			$("#copyright").css("position", "absolute");
-			$("#copyright").css("bottom", "10px");
-		    document.execCommand("stop");
-		} else {
-			setTimeout(function () {
-				startHeartAnimation();
-			}, 5000);
-
-			timeElapse(together);
-			setInterval(function () {
-				timeElapse(together);
-			}, 500);
-
-			adjustCodePosition();
-			$("#code").typewriter();
-		}
-	</script>
-</body>
-</html>
-
+    <div class="col-md-6 col-12 mb-4">
+  <div class="hovereffect">
+    <a href="/blog/2016/08/20/TheGreatWall/">
+      <img class="img-fluid portfolio-img" src="/blog/images/greatwall1.jpg" alt="箭扣初见">
+      <div class="overlay">
+        <span class="overlay-text">箭扣初见</span>
+      </div>
+    </a>
+  </div>
 </div>
+
+
+    <div class="col-md-6 col-12 mb-4">
+  <div class="hovereffect">
+    <a href="/blog/2016/12/12/Bookstore/">
+      <img class="img-fluid portfolio-img" src="/blog/images/bookstore1.jpg" alt="相约彼岸">
+      <div class="overlay">
+        <span class="overlay-text">相约彼岸</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+    <div class="col-md-6 col-12 mb-4">
+  <div class="hovereffect">
+    <a href="/blog/2017/04/05/Desert/">
+      <img class="img-fluid portfolio-img" src="/blog/images/desert.jpg" alt="重装库布齐">
+      <div class="overlay">
+        <span class="overlay-text">重装库布齐</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+    <div class="col-md-6 col-12 mb-4">
+  <div class="hovereffect">
+    <a href="/blog/2017/08/14/Food/">
+      <img class="img-fluid portfolio-img" src="/blog/images/cook.jpg" alt="食">
+      <div class="overlay">
+        <span class="overlay-text">食</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+    <div class="col-md-6 col-12 mb-4">
+  <div class="hovereffect">
+    <a href="/blog/2017/09/01/Beijing/">
+      <img class="img-fluid portfolio-img" src="/blog/images/2017.jpg" alt="解锁北京">
+      <div class="overlay">
+        <span class="overlay-text">解锁北京</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+    <div class="col-md-6 col-12 mb-4">
+  <div class="hovereffect">
+    <a href="/blog/2017/11/11/Art/">
+      <img class="img-fluid portfolio-img" src="/blog/images/opera.png" alt="乐">
+      <div class="overlay">
+        <span class="overlay-text">乐</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+    <div class="col-md-6 col-12 mb-4">
+  <div class="hovereffect">
+    <a href="/blog/2018/08/14/Hello-Tracy/">
+      <img class="img-fluid portfolio-img" src="/blog/images/unsplash.jpg" alt="Hello Tracy">
+      <div class="overlay">
+        <span class="overlay-text">Hello Tracy</span>
+      </div>
+    </a>
+  </div>
+</div>
+
 
 
       </div>
